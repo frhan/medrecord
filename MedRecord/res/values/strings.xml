@@ -3,6 +3,33 @@
 
     <string name="app_name">MedRecord</string>
     <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="btn_who_to_call">Who to Call</string>
+    <string name="btn_my_id_doc">My Id,My Doctors</string>
+    <string name="btn_my_con_his">My Conditions and History</string>
+    <string name="btn_my_med">My Medications</string>
     <string name="hello_world">Hello world!</string>
+    <string name="btn_my_insurence">My Insurance</string>
+    <string name="btn_my_allergies">My Allergies</string>
+    <string name="name">Name:</string>
+    <string name="who">Who:</string>
+    <string name="title">Title:</string>
+    <string name="phone">phone:</string>
+    <string name="phone1">phone 1:</string>
+    <string name="phone2">phone 2:</string>
+    <string name="hospital">Hospital:</string>
+    <string name="street">Street:</string>
+    <string name="city">City:</string>
+    <string name="state">State/Prov:</string>
+    <string name="zip_code">Zip/Post:</string>
+    <string name="medication">Medication:</string>
+    <string name="dose">Dose:</string>
+    <string name="frequency">Frequency:</string>
+    <string name="provider">Provider:</string>
+    <string name="policy">Policy #:</string>
+    <string name="note">Notes:</string>
+    <string name="allergy">Allergy:</string>
+    <string name="treatment">Treatment:</string>
+    <string name="reaction">My Reaction:</string>
 
 </resources>
