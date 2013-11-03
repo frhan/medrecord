@@ -17,7 +17,7 @@ public class HomeActivity extends TopActivity
 
 	public void onClickWhoToCall(View v)
 	{
-		startActivity(new Intent(activity, me.farhan.medrecord.activity.WhoToCallEditActivity.class));
+		startActivity(new Intent(activity, me.farhan.medrecord.activity.WhoToCallActivty.class));
 		
 	}
 }

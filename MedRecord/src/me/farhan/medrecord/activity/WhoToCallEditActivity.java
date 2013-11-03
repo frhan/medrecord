@@ -12,7 +12,7 @@ public class WhoToCallEditActivity extends TopActivity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.who_to_call_full_row);
+		setContentView(R.layout.who_to_call);
 	}
 
 	@Override

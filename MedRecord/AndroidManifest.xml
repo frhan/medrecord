@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="me.farhan.medrecord.activity.WhoToCallActivty"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name="me.farhan.medrecord.activity.WhoToCallEditActivity"
             android:label="@string/app_name" >
         </activity>
