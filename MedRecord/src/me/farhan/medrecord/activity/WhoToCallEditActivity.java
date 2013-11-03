@@ -1,10 +1,10 @@
 package me.farhan.medrecord.activity;
 
 
+import com.actionbarsherlock.view.Menu;
+
 import me.farhan.medrecord.R;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class WhoToCallEditActivity extends TopActivity
 {
@@ -12,18 +12,16 @@ public class WhoToCallEditActivity extends TopActivity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.allergy);
+		setContentView(R.layout.add_call_ac);
 	}
 
+
+
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.post_edit, menu);
+	public boolean onCreateOptionsMenu(Menu menu) 
+	{
+		getSupportMenuInflater().inflate(R.menu.post_edit, menu);
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) 
-	{
-		return super.onOptionsItemSelected(item);
-	}
 }
