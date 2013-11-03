@@ -25,7 +25,7 @@
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
                 android:layout_weight="1"
-                android:text="My name is Far"
+                android:text="Mr. Arham Namir Hossain"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_medium" >
             </TextView>
@@ -48,7 +48,7 @@
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
                 android:layout_weight="1"
-                android:text="brother"
+                android:text="Son"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_medium" >
             </TextView>
@@ -71,7 +71,7 @@
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
                 android:layout_weight="1"
-                android:text="900900"
+                android:text="+88017890987"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_medium" >
             </TextView>
@@ -96,6 +96,7 @@
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
                 android:layout_weight="1"
+                android:text="+88017890987"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_medium" >
             </TextView>
