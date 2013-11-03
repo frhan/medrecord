@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expand="http://schemas.android.com/apk/res/me.farhan.medrecord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <me.farhan.medrecord.widget.ExpandablePanel
+        android:id="@+id/foo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        expand:animationDuration="200"
+        expand:collapsedHeight="0dp"
+        expand:content="@+id/value"
+        expand:handle="@+id/expand" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="hello"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <Button
+                    android:id="@id/expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="More" />
+            </RelativeLayout>
+
+            <include
+                android:id="@id/value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value"
+                layout="@layout/who_to_call_row" />
+        </LinearLayout>
+    </me.farhan.medrecord.widget.ExpandablePanel>
+
+</LinearLayout>

@@ -12,10 +12,8 @@ public class WhoToCallEditActivity extends TopActivity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.add_call_ac);
+		setContentView(R.layout.who_to_call_full_row);
 	}
-
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 

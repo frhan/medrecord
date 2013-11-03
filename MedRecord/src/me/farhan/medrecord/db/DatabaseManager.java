@@ -10,7 +10,7 @@ public class DatabaseManager {
 	private static DatabaseManager dbManager = null;
 	//the name of your database
 	private static String DB_NAME = "medrecord";
-
+	
 	// database version    
 	private static final int DATABASE_VERSION = 1;
 	private DbHalper dbHelper;
