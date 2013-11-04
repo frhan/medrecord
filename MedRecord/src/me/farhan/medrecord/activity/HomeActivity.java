@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomeActivity extends TopActivity 
+public class HomeActivity extends TopActionbarActivity 
 {
 	
 	@Override

@@ -19,6 +19,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/tv_call_name"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
@@ -40,6 +41,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/tv_call_relation"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
@@ -61,6 +63,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/tv_call_phone1"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"
@@ -82,6 +85,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/tv_call_phone2"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="20dip"

@@ -14,7 +14,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
-public class WhoToCallActivty extends TopActivity 
+public class WhoToCallActivty extends TopActionbarActivity 
 {
 	private ListView lvCallerList;
 	private List<Caller> listCallers;
@@ -28,20 +28,26 @@ public class WhoToCallActivty extends TopActivity
 		init();
 	}
 
-	private void init() {
+	@Override
+	protected void onResume()
+	{
+		super.onResume();
+		List<Caller> dbCallerList = dbManager.getAllCallers();
+		whoToCallAdapter.refreshList(dbCallerList);
+	}
+	
+	private void init() 
+	{
+		
+		actionBar.setDisplayHomeAsUpEnabled(false);
+		actionBar.setTitle(getResources().getString(R.string.btn_who_to_call));
+		
 		lvCallerList = (ListView)findViewById(R.id.lv_record_list);
 		listCallers = new ArrayList<Caller>();
-		Caller c = new Caller(1,"Arham Namir Hoassain","Son","123456","5657575");
-		Caller c2 = new Caller(2,"Manha Binte Allam bjsbs","Daughter","123456","5657575");
-		Caller c3 = new Caller(3,"Forhad Hoassain","Brother","123456","5657575");
-		Caller c4 = new Caller(4,"Hamid","Father","123456","5657575");
-
-		listCallers.add(c2);
-		listCallers.add(c3);
-		listCallers.add(c4);
 		whoToCallAdapter = new WhoToCallAdapter(activity, listCallers);
 		lvCallerList.setAdapter(whoToCallAdapter);
 	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 
 	{

@@ -43,6 +43,16 @@ public class WhoToCallAdapter extends BaseAdapter
 	{
 		return position;
 	}
+	
+	public void refreshList(List<Caller> callers) 
+	{
+		if(callers != null)
+		{
+			this.listCaller.clear();
+			this.listCaller.addAll(callers);
+			notifyDataSetChanged();
+		}
+	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) 
