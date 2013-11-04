@@ -15,9 +15,9 @@
     <string name="name">Name:</string>
     <string name="who">Who:</string>
     <string name="title">Title:</string>
-    <string name="phone">phone:</string>
-    <string name="phone1">phone 1:</string>
-    <string name="phone2">phone 2:</string>
+    <string name="phone">Phone:</string>
+    <string name="phone1">Phone 1:</string>
+    <string name="phone2">Phone 2:</string>
     <string name="hospital">Hospital:</string>
     <string name="street">Street:</string>
     <string name="city">City:</string>
