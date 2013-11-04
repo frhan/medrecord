@@ -30,6 +30,7 @@
                 android:background="@android:color/darker_gray" >
 
                 <TextView
+                    android:id="@+id/tv_caller_panel_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -55,66 +56,9 @@
                 android:id="@id/value"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                 android:layout_marginRight="5dp"
                 android:layout_below="@id/rl_expand"
-                layout="@layout/who_to_call_row" />
-        </LinearLayout>
-    </me.farhan.medrecord.widget.ExpandablePanel>
-    
-        <me.farhan.medrecord.widget.ExpandablePanel
-        android:id="@+id/foo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        expand:animationDuration="200"
-        expand:collapsedHeight="2dp"
-        expand:content="@+id/value"
-        expand:handle="@+id/expand" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <RelativeLayout
-                android:id="@+id/rl_expand"
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/darker_gray" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:text="Son"
-                    android:textColor="@color/blue"
-                    android:textSize="@dimen/text_size_medium" />
-
-                <ImageButton
-                    android:id="@id/expand"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:background="@null"
-                    android:src="@drawable/ic_content_new"
-                    android:text="Hello" />
-            </RelativeLayout>
-
-            <include
-                android:id="@id/value"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                 android:layout_marginRight="5dp"
-                android:layout_below="@id/rl_expand"
                 layout="@layout/who_to_call_row" />
         </LinearLayout>
     </me.farhan.medrecord.widget.ExpandablePanel>
