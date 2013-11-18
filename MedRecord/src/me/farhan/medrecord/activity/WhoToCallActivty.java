@@ -35,13 +35,11 @@ public class WhoToCallActivty extends TopActionbarActivity
 		List<Caller> dbCallerList = dbManager.getAllCallers();
 		whoToCallAdapter.refreshList(dbCallerList);
 	}
-	
+
 	private void init() 
-	{
-		
-		actionBar.setDisplayHomeAsUpEnabled(false);
+	{		
 		actionBar.setTitle(getResources().getString(R.string.btn_who_to_call));
-		
+
 		lvCallerList = (ListView)findViewById(R.id.lv_record_list);
 		listCallers = new ArrayList<Caller>();
 		whoToCallAdapter = new WhoToCallAdapter(activity, listCallers);
@@ -51,6 +49,7 @@ public class WhoToCallActivty extends TopActionbarActivity
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 
 	{
+		super.onCreateOptionsMenu(menu);
 		getSupportMenuInflater().inflate(R.menu.caller_menu, menu);
 		return true;
 	}
@@ -58,7 +57,8 @@ public class WhoToCallActivty extends TopActionbarActivity
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) 
 	{
-		switch (item.getItemId()) {
+		switch (item.getItemId()) 
+		{
 		case R.id.action_add:
 			startActivity(new Intent(activity, me.farhan.medrecord.activity.WhoToCallEditActivity.class));
 			break;

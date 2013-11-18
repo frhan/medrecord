@@ -49,8 +49,8 @@ public class WhoToCallEditActivity extends TopActionbarActivity
 		{
 			saveToDb();			
 		}
-
-		return true;
+		
+		return super.onOptionsItemSelected(item);
 	}
 
 	private void saveToDb()

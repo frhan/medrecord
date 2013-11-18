@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
 
 
 public abstract class TopActionbarActivity extends SherlockFragmentActivity 
@@ -15,6 +17,7 @@ public abstract class TopActionbarActivity extends SherlockFragmentActivity
 	protected Activity activity;
 	protected ActionBar actionBar;
 	protected DatabaseManager dbManager;
+	protected Menu menu;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public abstract class TopActionbarActivity extends SherlockFragmentActivity
 		actionBar = getSupportActionBar();
 		dbManager = DatabaseManager.getInstance(activity);
 		actionBar.setDisplayHomeAsUpEnabled(true);
+
 	}
 
 	@Override
@@ -39,10 +43,23 @@ public abstract class TopActionbarActivity extends SherlockFragmentActivity
 		dbManager.close();
 	}
 
-	//	@Override
-	//	protected void onDestroy() 
-	//	{
-	//		super.onDestroy();
-	//		dbManager.close();
-	//	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) 
+	{
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			break;
+
+		default:
+			break;
+		}
+		return true;
+	}
 }
