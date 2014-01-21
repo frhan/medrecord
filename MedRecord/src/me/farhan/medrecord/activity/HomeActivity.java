@@ -17,6 +17,7 @@ public class HomeActivity extends TopActionbarActivity
 
 	public void onClickWhoToCall(View v)
 	{
+
 		startActivity(new Intent(activity, me.farhan.medrecord.activity.WhoToCallActivty.class));
 		
 	}
